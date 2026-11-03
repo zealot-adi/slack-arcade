@@ -9,7 +9,7 @@ function App() {
     fetch('https://hackclub.com')
       .then((res) => res.json())
       .then((data) => {
-        // Take the top 5 most recent posts
+        // Take the top 5 most recent posts to display on screen
         setScraps(data.slice(0, 5));
         setLoading(false);
       })
